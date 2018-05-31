@@ -39,8 +39,17 @@ public class Controller extends HttpServlet {
 		//doGet(request, response);
 		doaction(request,response);
 	}
-	public void doaction(HttpServletRequest request, HttpServletResponse response)
+	private void doaction(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException
 	{
+		request.setCharacterEncoding("EUC-KR");
+		
+		String viewPage = null;
+		//BCommand command = null;
+		
+		String uri = request.getRequestURI();
+		String conPath = request.getContextPath();
+		String com = uri.substring(conPath.length());
+		
 		
 	}
 	
