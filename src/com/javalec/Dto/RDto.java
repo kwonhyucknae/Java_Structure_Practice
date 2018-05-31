@@ -29,8 +29,9 @@ public class RDto {
 			temp.setNine(nine[i]);
 			temp.setTen(ten[i]);
 			list.add(temp);
-		}	
-		
+		}
+		//System.out.println(list.size());
+		list=merge.mergeSort(list);
 	}
 	
 	public List<Dto> getList()
